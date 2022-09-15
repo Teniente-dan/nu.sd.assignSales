@@ -1,7 +1,7 @@
 {
   "_version": "1.42.0",
   "sap.app": {
-    "id": "nu.sd.assignSales",
+    "id": "nu.sd.asotcc",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -70,7 +70,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "nu.sd.assignSales.i18n.i18n"
+          "bundleName": "nu.sd.asotcc.i18n.i18n"
         }
       },
       "": {
@@ -109,7 +109,7 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "nu.sd.assignSales.view",
+        "viewPath": "nu.sd.asotcc.view",
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false
@@ -174,7 +174,7 @@
       }
     },
     "rootView": {
-      "viewName": "nu.sd.assignSales.view.App",
+      "viewName": "nu.sd.asotcc.view.App",
       "type": "XML",
       "async": true,
       "id": "App"

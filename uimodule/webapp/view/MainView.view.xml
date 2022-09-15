@@ -1,4 +1,4 @@
-<mvc:View controllerName="nu.sd.assignSales.controller.MainView"
+<mvc:View controllerName="nu.sd.asotcc.controller.MainView"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:layout="sap.ui.layout"
     xmlns="sap.m" displayBlock="true" height="100%" busyIndicatorDelay="0">

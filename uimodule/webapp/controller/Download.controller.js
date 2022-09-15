@@ -18,7 +18,7 @@ sap.ui.define([
 ) {
   "use strict";
 
-  return BaseController.extend("nu.sd.assignSales.controller.Download", {
+  return BaseController.extend("nu.sd.asotcc.controller.Download", {
     onInit: function () {
       this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
       this.oRouter.getRoute("downloadView").attachPatternMatched(this.onPageLoaded, this);

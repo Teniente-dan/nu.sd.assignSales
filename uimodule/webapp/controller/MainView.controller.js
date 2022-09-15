@@ -12,7 +12,7 @@ sap.ui.define(
   function (Controller, MessageBox) {
     "use strict";
 
-    return Controller.extend("nu.sd.assignSales.controller.MainView", {
+    return Controller.extend("nu.sd.asotcc.controller.MainView", {
       onInit: function () {
         this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
         this.oRouter.getRoute("mainView").attachPatternMatched(this.onPageLoaded, this);

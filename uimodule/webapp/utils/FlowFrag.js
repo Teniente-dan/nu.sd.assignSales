@@ -4,7 +4,7 @@ sap.ui.define(
   function (ManagedObject, MessageBox, Fragment, JSONModel) {
     "use strict";
 
-    return ManagedObject.extend("nu.sd.assignSales.utils.FlowFrag", {
+    return ManagedObject.extend("nu.sd.asotcc.utils.FlowFrag", {
       constructor: function () {
         this.appConfig;
       },

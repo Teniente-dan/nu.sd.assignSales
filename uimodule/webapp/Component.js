@@ -1,5 +1,5 @@
 sap.ui.define(
-  ["sap/ui/core/UIComponent", "sap/ui/Device", "nu/sd/assignSales/model/models", "./utils/XlsxUtils", "./utils/FlowFrag"],
+  ["sap/ui/core/UIComponent", "sap/ui/Device", "nu/sd/asotcc/model/models", "./utils/XlsxUtils", "./utils/FlowFrag"],
   /**
    * @param {typeof sap.ui.core.UIComponent} UIComponent
    * @param {typeof sap.ui.Device} Device
@@ -7,7 +7,7 @@ sap.ui.define(
   function (UIComponent, Device, models, XlsxUtils, FlowFrag) {
     "use strict";
 
-    return UIComponent.extend("nu.sd.assignSales.Component", {
+    return UIComponent.extend("nu.sd.asotcc.Component", {
       metadata: {
         manifest: "json",
       },

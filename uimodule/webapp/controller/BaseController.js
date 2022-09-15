@@ -1,6 +1,6 @@
 /* eslint-disable no-var */
 sap.ui.define(
-  ["sap/ui/core/mvc/Controller", "sap/ui/core/routing/History", "sap/ui/core/UIComponent", "nu/sd/assignSales/model/formatter"],
+  ["sap/ui/core/mvc/Controller", "sap/ui/core/routing/History", "sap/ui/core/UIComponent", "nu/sd/asotcc/model/formatter"],
   /**
    * @param {typeof sap.ui.core.mvc.Controller} Controller
    * @param {typeof sap.ui.core.routing.History} History
@@ -9,7 +9,7 @@ sap.ui.define(
   function (Controller, History, UIComponent, formatter) {
     "use strict";
 
-    return Controller.extend("nu.sd.assignSales.controller.BaseController", {
+    return Controller.extend("nu.sd.asotcc.controller.BaseController", {
       formatter: formatter,
 
       /**

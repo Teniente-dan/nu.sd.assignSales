@@ -1,6 +1,6 @@
 specVersion: "2.2"
 metadata:
-  name: assignSales_uimodule
+  name: asotcc_uimodule
 type: application
 resources:
   configuration:

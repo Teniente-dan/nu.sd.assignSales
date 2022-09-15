@@ -1,4 +1,4 @@
-<mvc:View controllerName="nu.sd.assignSales.controller.Create"
+<mvc:View controllerName="nu.sd.asotcc.controller.Create"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
 	xmlns:layout="sap.ui.layout"

@@ -18,7 +18,7 @@ sap.ui.define([
 ) {
   "use strict";
 
-  return BaseController.extend("nu.sd.assignSales.controller.Mass", {
+  return BaseController.extend("nu.sd.asotcc.controller.Mass", {
     onInit: function () {
       this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
       this.oRouter.getRoute("massView").attachPatternMatched(this.onPageLoaded, this);

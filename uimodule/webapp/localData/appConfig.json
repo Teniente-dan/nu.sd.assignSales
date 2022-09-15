@@ -2,8 +2,8 @@
     "specInputs":["in2"],
     "mainField":"Vkorg",
     "valFields": ["in1", "in2"],
-    "fragFlow": "nu.sd.assignSales.view.fragments.flowCreation",
-    "fragValueHelp" : "nu.sd.assignSales.view.fragments.ValueHelpDialog",
+    "fragFlow": "nu.sd.asotcc.view.fragments.flowCreation",
+    "fragValueHelp" : "nu.sd.asotcc.view.fragments.ValueHelpDialog",
     "downloadFileName": "Assign Sales.Org to Company Code",
     "templateName": "Assign Sales.Org to Company Code"
 }
