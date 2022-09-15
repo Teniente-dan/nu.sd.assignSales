@@ -4,6 +4,6 @@
     "valFields": ["in1", "in2"],
     "fragFlow": "nu.sd.assignSales.view.fragments.flowCreation",
     "fragValueHelp" : "nu.sd.assignSales.view.fragments.ValueHelpDialog",
-    "downloadFileName": "Assign Sales Data",
-    "templateName": "Assign Sales Template"
+    "downloadFileName": "Assign Sales.Org to Company Code",
+    "templateName": "Assign Sales.Org to Company Code"
 }

@@ -4,7 +4,7 @@
   "scripts": {
     "start": "ui5 serve --config=uimodule/ui5.yaml  --open index.html",
     "testo": "ui5 serve --config=uimodule/ui5.yaml --open 'test/mockServer.html'",    
-    "build:ui": "run-s  build:uimodule",
+    "buildo": "run-s  build:uimodule",
     "test": "run-s lint karma",
     "karma-ci": "karma start karma-ci.conf.js",
     "clearCoverage": "shx rm -rf coverage",

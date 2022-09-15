@@ -100,7 +100,7 @@ sap.ui.define([
           //   oCall.mParameters.oFilteredData = "xxx";
           // }, "plantValPlantSet");
           oMockServer.attachAfter(sap.ui.core.util.MockServer.HTTPMETHOD.POST, function (oCall) {
-            switch (oCall.mParameters.oEntity.action) {
+            switch (oCall.mParameters.oEntity.actionKey) {
               case 'TEMPLATE':
                 var toXLSX = {
                   results: [{
