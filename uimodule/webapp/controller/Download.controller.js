@@ -142,14 +142,14 @@ sap.ui.define([
         that.getModel().create(url, oPayload, {
           success: function (res) {
             if (res.toReturn.results && res.toReturn.results.length > 0) {
-              reject(that.displayResults(res.toReturn.results));
+              return reject(that.displayResults(res.toReturn.results));
             }
             if (res.toXLSX.results && res.toXLSX.results.length > 0) {
-              resolve(res.toXLSX.results);
+              return resolve(res.toXLSX.results);
             }
           },
           Error: function (err) {
-            reject(err);
+            return reject(err);
           }
         });
       });

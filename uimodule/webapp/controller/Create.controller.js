@@ -265,13 +265,12 @@ sap.ui.define([
       return new Promise(function (resolve, reject) {
         this.valMainFieldOrg(datosGral.in1).then(function (result) {
             if (result && this.valAllFields()) {
-              resolve(this.sendToBackForCreate());
-            } else {
-              reject(false);
+              return resolve(this.sendToBackForCreate());
             }
+            return reject(false);
           }.bind(this))
           .catch(function (oError) {
-            reject(oError);
+            return reject(oError);
           });
       }.bind(this));
     },
@@ -296,9 +295,9 @@ sap.ui.define([
         that.getModel().create(url, oPayload, {
           success: function (res) {
             if (res.toReturn.results) {
-              resolve(that.displayResults(res.toReturn.results));
+              return resolve(that.displayResults(res.toReturn.results));
             }
-            resolve(true);
+            return resolve(true);
           },
           error: function (err) {
             MessageBox.error(err.message);

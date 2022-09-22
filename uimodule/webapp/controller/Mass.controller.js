@@ -52,12 +52,12 @@ sap.ui.define([
                   oHeaders.push(res.toXLSX.results[0][key]);
                 }
               }
-              resolve(oHeaders);
+              return resolve(oHeaders);
             }
-            reject();
+            return reject();
           },
           error: function (err) {
-            reject(err);
+            return reject(err);
           }
         });
       });
@@ -179,18 +179,18 @@ sap.ui.define([
         that.getModel().create(url, oPayload, {
           success: function (res) {
             if (res.toReturn.results && res.toReturn.results.length > 0) {
-              resolve(that.displayResults(res.toReturn.results, ['message']));
+              return resolve(that.displayResults(res.toReturn.results, ['message']));
             }
             if (res.toError.results && res.toError.results.length > 0) {
-              resolve(that.displayResults(res.toError.results, ['Msg']));
+              return resolve(that.displayResults(res.toError.results, ['Msg']));
             }
             if (res.toOutput.results && res.toOutput.results.length > 0) {
-              resolve(that.displayResults(res.toOutput.results, ['Sorg', 'Msg']));
+              return resolve(that.displayResults(res.toOutput.results, ['Sorg', 'Msg']));
             }
           },
           error: function (err) {
             MessageBox.error(err.message);
-            reject(err);
+            return reject(err);
           }
         });
       });

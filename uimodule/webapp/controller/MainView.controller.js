@@ -65,12 +65,12 @@ sap.ui.define(
                     oHeaders[res.toXLSX.results[0][key]] = "";
                   }
                 }
-                resolve(oHeaders);
+                return resolve(oHeaders);
               }
-              reject();
+              return reject();
             },
             error: function (err) {
-              reject(err);
+              return reject(err);
             }
           });
         });
