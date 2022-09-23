@@ -4,7 +4,7 @@
   "scripts": {
     "start": "ui5 serve --config=uimodule/ui5.yaml  --open index.html",
     "testo": "ui5 serve --config=uimodule/ui5.yaml --open 'test/mockServer.html'",    
-    "buildo": "run-s  build:uimodule && node -e \"setTimeout(() => process.exit(0), 2000)\" && npm run prepDist",
+    "buildo": "run-s  build:uimodule && npm run prepDist && npm run prepDist",
     "prepDist": "del-cli --force **/dist/controller **/dist/libs **/dist/model **/dist/resources **/dist/utils **/dist/view **/dist/Component.js **/dist/Component-dbg.js",    
     "test": "run-s lint karma",
     "karma-ci": "karma start karma-ci.conf.js",
