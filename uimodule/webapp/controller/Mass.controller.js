@@ -214,7 +214,7 @@ sap.ui.define([
             state: "Error"
           };
         })
-        this.getOwnerComponent().oFlowFrag.open(oResults, "Sales Org Creation Results", this.getView());
+        this.getOwnerComponent().oFlowFrag.open(oResults, "Creation Results", this.getView());
 
       }
     },
